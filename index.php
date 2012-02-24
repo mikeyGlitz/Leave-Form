@@ -12,8 +12,8 @@
 
 <body>
 	<?php
-		include "head.php"
-	/?>
+		include "head.php";
+	?>
 		</div>
 	</div> <!-- /#header -->
 	<div id="adbox">
