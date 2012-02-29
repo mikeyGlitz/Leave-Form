@@ -15,7 +15,7 @@
 		<a href="index.html" id="logo"><img src="images/logo.jpg" alt="LOGO" /></a>
 		<div id="navigation">
 			<ul>
-				<li class="first selected"><a href="index.html">Home</a></li>
+				<li class="first selected"><a href="index.php">Home</a></li>
 				<li><a href="about.html">About us</a></li>
 				<li><a href="services.html">Services</a></li>
 				<li><a href="solutions.html">Solutions</a></li>
