@@ -16,7 +16,16 @@
 	?>
 	<div id="contents">
 		<div class="background">
-			<h1>More to Come Soon</h1>
+			<h2>Select Your Employment Status</h2>
+<form name=employment id=employee>
+<select name=empl id=empl>
+<option name=adminfac id=adminfac>Administrative Faculty</option>
+<option name=clasempl id=clasempl>Classified Employee</option>
+<option name=partempl id=partempl>Part-Time Employee</option>
+<option name=altpay id=altpay>Alternate Pay</option>
+</select>
+<input type=submit value="proceed" />
+</form>
 		</div>
 	</div> <!-- /#contents -->
 	<?php
