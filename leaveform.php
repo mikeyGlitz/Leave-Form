@@ -16,7 +16,8 @@
 	?>
 	<div id="contents">
 		<div class="background">
-			<h2>Select Your Employment Status</h2>
+			<h2>Select Your Employment Status</h2><br />
+<hr /><br />
 <form name=employment id=employee>
 <select name=empl id=empl>
 <option selected>---Select an option---</option>
