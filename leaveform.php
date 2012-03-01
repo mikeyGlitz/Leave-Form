@@ -1,7 +1,12 @@
 <?php
-	#find out which form to get from the GET in the addressbar
-	$formToGet = $_GET['empl'];
+	#Start a Session
+	session_start();
+
+	#store the email as a session variable
+	$_SESSION['email'] = $_POST['email'];
 	
+	$formToGet = $_POST['empl'];
+
 	#if $_GET is not equal to "---Select an option---", then proceed with loading the page
 	#otherwise, re-direct back to index
 	if($formToGet == '---Select an option---'){
@@ -124,7 +129,7 @@
 				<hr />
 			<?php } ?>
 
-			<? if($formToGet == 'Classified Employe'){ 
+			<? if($formToGet == 'Classified Employee'){ 
 				include 'weekly.php';
 			?>
 				<!-- Code the Leave Activity Reporting Form -->
