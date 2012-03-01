@@ -1,4 +1,4 @@
-<div id="footer">
+<div id="footer" style="clear:both">
                 <table class="contacts" style="float: left; margin-right: 2em">
                         <tr><td><h3>Contact Us</h3></td></tr>
                         <tr><td><b>Address:</b></td><td> <b>University of Mary Washington Payroll Services</b><br /> 1301 College Ave, Fredericksburg, VA 22401</td></tr>
