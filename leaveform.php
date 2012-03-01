@@ -10,12 +10,12 @@
 	<![endif]-->
 </head>
 
-<body>
+<body >
 	<?php
 		include "head.php";
 	?>
 	<div id="contents">
-		<div class="background">
+		<div class="background" style="min-height: 150px; text-align: center">
 			<h2>Select Your Employment Status</h2><br />
 			<hr /><br />
 			<form name=employment id=employee>
