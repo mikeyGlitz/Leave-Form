@@ -19,6 +19,7 @@
 			<h2>Select Your Employment Status</h2>
 <form name=employment id=employee>
 <select name=empl id=empl>
+<option selected>---Select an option---</option>
 <option name=adminfac id=adminfac>Administrative Faculty</option>
 <option name=clasempl id=clasempl>Classified Employee</option>
 <option name=partempl id=partempl>Part-Time Employee</option>
