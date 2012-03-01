@@ -115,7 +115,8 @@
 						<td><input type=text name=days4 /></td>
 						<td><input type=text name=dayfrm4 /></td>
 						<td><input type=text name=dayto4 /></td></tr>
-				
+
+						<tr><td>
 						<!-- Row 5 -->
 							<select name=Type5>	
 								<option>AT</option>
