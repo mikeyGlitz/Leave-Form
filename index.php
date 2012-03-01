@@ -17,7 +17,6 @@
 					<option selected>---Select an option---</option>
 					<option name=adminfac id=adminfac>Administrative Faculty</option>
 					<option name=clasempl id=clasempl>Classified Employee</option>
-					<option name=partempl id=partempl>Part-Time Employee</option>
 				</select><br />
 				<input type=submit value="proceed" />
 			</form>
