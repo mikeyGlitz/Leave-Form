@@ -17,7 +17,7 @@
 				<h3>Leave Activity Reporting for Administrative Faculty</h3><hr />
 				<h4>Insturctions:</h4>
 				<p>Please fill out the form below and press submit.</p><hr />
-				<p>Note: Annual leave is granted in a lump sum on June 25 each year. Any portion of annual leave not used by June 24 is forfeited. No annual leave will be carried over from one year to the next. Please see the <a href="#">Administrative and Professional Faculty Handbok</a> for more details regarding leave benefits.</p>
+				<p>Note: Annual leave is granted in a lump sum on June 25 each year. Any portion of annual leave not used by June 24 is forfeited. No annual leave will be carried over from one year to the next. Please see the <a href="http://adminfinance.umw.edu/hr/handbooks/administrative-and-professional-faculty-handbook/">Administrative and Professional Faculty Handbok</a> for more details regarding leave benefits.</p>
 				<label for=first>First Name:</label><input type=text name=first />
 				<label for=last>Last Name:</label><input type=text name=last /><br />
 				<h4>Leave Information</h4>
