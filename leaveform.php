@@ -124,7 +124,7 @@
 				<hr />
 			<?php } ?>
 
-			<? if($formToGet == 'Classified Employe'){ 
+			<? if($formToGet == 'Classified Employee'){ 
 				include 'weekly.php';
 			?>
 				<!-- Code the Leave Activity Reporting Form -->
