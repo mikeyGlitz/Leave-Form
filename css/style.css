@@ -329,7 +329,7 @@ img {
 #contents .background {
 	background-color: #ffffff;
 	line-height: 20px;
-	min-height: 960px;
+	min-height: 300px;
 	width: 920px;
 	border-radius: 3px;
 	margin: 0 auto;
