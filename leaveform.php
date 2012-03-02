@@ -102,7 +102,6 @@
 						<td><input type=text name=dayfrm3 /></td>
 						<td><input type=text name=dayto3 /></td></tr>
 						<tr><td>
-
 						<!-- Row 4 -->
 							<select name=Type4>	
 								<option>AT</option>
@@ -116,7 +115,22 @@
 						<td><input type=text name=days4 /></td>
 						<td><input type=text name=dayfrm4 /></td>
 						<td><input type=text name=dayto4 /></td></tr>
-				
+
+						<tr><td>
+						<!-- Row 5 -->
+							<select name=Type5>	
+								<option>AT</option>
+								<option>SP</option>
+								<option>SF</option>
+								<option>FP</option>
+								<option>JT</option>
+								<option>CS</option>
+							</select>
+						</td>
+						<td><input type=text name=days5 /></td>
+						<td><input type=text name=dayfrm5 /></td>
+						<td><input type=text name=dayto5 /></td></tr>
+
 					</tbody>
 				</table>
 				</td></tr>
@@ -127,23 +141,108 @@
 				<!-- Inesert code for a digital signature here -->
 				<label for=emp>Employee Signature:</label><input type=text name=signature />
 				<hr />
-			<?php } ?>
-
-			<? if($formToGet == 'Classified Employee'){ 
+				
+			<?php	}
+				if($formToGet == 'Classified Employee'){ 
 				include 'weekly.php';
 			?>
-				<!-- Code the Leave Activity Reporting Form -->
-			<?}?>
-	
-			<? if($formToGet == 'Part-Time Employee'){
-				include 'weekly.php';
-			?>
-				<!--Code the Bi-weekly Timesheet -->
-			<?}?>
+				<label for=num>Company Number:</label><input type=text name=num />
+				<label for=emplnum>Employee Number:</label><input type=text name=emplnum /><br />
 
-			<input type=submit value="Submit" />
+				<label for=first>First Name:</label><input type=text name=first />
+				<label for=last>Last Name:</label><input type=text name=last /><hr />
+				<table id=leave>
+					<tr><td>
+						<table id=types rules=groups frame=hsides border=1 bordercolor=navy>
+							<thead><th>Leave Types</th></thead>
+							<tbody>
+								<tr><td>CS</td><td>Community Service</td></tr>
+								<tr><td>AT</td><td>Annual Leave Taken</td></tr>
+								<tr><td>BT</td><td>Bonus Leave Taken</td></tr>
+								<tr><td>SP</td><td>Sick Taken-Personal</td></tr>
+								<tr><td>SF</td><td>Sick Taken-Family</td></tr>
+								<tr><td>CT</td><td>Compensatory Leave Taken</td></tr>
+								<tr><td>ET</td><td>Educational Leave Taken</td></tr>
+								<tr><td>MT</td><td>Military Leave Taken</td></tr>
+								<tr><td>JT</td><td>Administrative Leave Taken</td></tr>
+								<tr><td>WT</td><td>Workers Compensatio</td><tr>
+								<tr><td>XX</td><td>Leave Without Pay</td></tr>
+								<tr><td>OT</td><td>Other Leave</td></tr>
+								<tr><td>OX</td><td>Overtime Leave Taken</td></tr>
+								<tr><td>DC</td><td>Disability Credit Taken</td></tr>
+								<tr><td>FP</td><td>Family and Personal Leave Taken</td></tr>
+								<tr><td>SD</td><td>Short Term Disability Leave Taken</td></tr>
+								<tr><td>MO</td><td>Bone Marrow and Organ Donation</td></tr>
+								<tr><td>RT</td><td>Recognition Leave Taken</td></tr>
+							</tbody>
+							<tfoot>
+								<tr><td>CE</td><td>Compensatory Leave Earned</td></tr>
+								<tr><td>OE</td><td>Overtime Leave Earned</td></tr>
+								<tr><td>RE</td><td>Recognition Leave Earned</td></tr>
+							</tfoot>
+						</table>
+					</td>
+					<td>
+							<h3>Leave Taken</h3>
+							<table id=taken rules=groups frame=hsides border=1 bordercolor=navy>
+							<thead>
+								<th>Leave Type</th><th>Hours</th><th>Date From</th><th>Date To</th>
+							</thead>
+
+							<tbody>
+								<tr><td>
+									<select name=ltype>
+										<option>CS</option>
+										<option>AT</option>
+										<option>BT</option>
+										<option>SP</option>
+										<option>SF</option>
+										<option>CT</option>
+										<option>ET</option>
+										<option>MT</option>
+										<option>JT</option>
+										<option>WT</option>
+										<option>XX</option>
+										<option>OT</option>
+										<option>DC</option>
+										<option>OT</option>
+										<option>OX</option>
+										<option>FP</option>
+										<option>SD</option>
+										<option>MO</option>
+										<option>RT</option>
+									</select></td>
+								<td><input type=text name=lhrs /></td>
+								<td><input type=text name=lstart /></td>
+								<td><input type=text name=lend /></td</tr>
+							</tbody>
+						</table>
+						<h3>Leave Earned</h3>
+						<table id=earned rules=groups frame=hsides border=1 bordercolor=navy>
+							<thead>
+								<th>Leave Type</th><th>Hours</th><th>Date From</th><th>Date To</th>
+							</thead>
+
+							<tbody>
+								<tr><td>
+									<select name=etype>
+										<option>CE</option>
+										<option>OE</option>
+										<option>RE</option>
+									</select></td>
+								<td><input type=text name=ehrs /></td>
+								<td><input type=text name=estart /></td>
+								<td><input type=text name=eend /></td</tr>
+							</tbody>
+						</table>
+
+				</td></tr>
+				</table>
+			<?}?>
+		<input type=submit value="Submit" />
 		</form>
-	
+
+				
 	</div> <!-- /#contents -->
 	<?php
 		include "footer.php";
