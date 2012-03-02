@@ -146,11 +146,11 @@
 				if($formToGet == 'Classified Employee'){ 
 				include 'weekly.php';
 			?>
-				<label for=num>Company Number</label><input type=text name=num />
-				<label for=emplnum>Employee Number</label><input type=text name=emplnum /><br />
+				<label for=num>Company Number:</label><input type=text name=num />
+				<label for=emplnum>Employee Number:</label><input type=text name=emplnum /><br />
 
-				<label for=first>First Name</label><input type=text name=first />
-				<label for=last>Last Name</label><input type=text name=last /><hr />
+				<label for=first>First Name:</label><input type=text name=first />
+				<label for=last>Last Name:</label><input type=text name=last /><hr />
 				<table id=leave>
 					<tr><td>
 						<table id=types rules=groups frame=hsides border=1 bordercolor=navy>
@@ -181,9 +181,10 @@
 								<tr><td>RE</td><td>Recognition Leave Earned</td></tr>
 							</tfoot>
 						</table>
-					</tr></td>
-					<tr><td>
-						<table id=taken rules=cols frame=vsides border=1 bordercolor=navy>
+					</td>
+					<td>
+							<h3>Leave Taken</h3>
+							<table id=taken rules=groups frame=hsides border=1 bordercolor=navy>
 							<thead>
 								<th>Leave Type</th><th>Hours</th><th>Date From</th><th>Date To</th>
 							</thead>
@@ -211,11 +212,31 @@
 										<option>MO</option>
 										<option>RT</option>
 									</select></td>
+								<td><input type=text name=lhrs /></td>
 								<td><input type=text name=lstart /></td>
-								<td><input type=text name=lend /></td></tr>
+								<td><input type=text name=lend /></td</tr>
 							</tbody>
 						</table>
-					</tr></td>
+						<h3>Leave Earned</h3>
+						<table id=earned rules=groups frame=hsides border=1 bordercolor=navy>
+							<thead>
+								<th>Leave Type</th><th>Hours</th><th>Date From</th><th>Date To</th>
+							</thead>
+
+							<tbody>
+								<tr><td>
+									<select name=etype>
+										<option>CE</option>
+										<option>OE</option>
+										<option>RE</option>
+									</select></td>
+								<td><input type=text name=ehrs /></td>
+								<td><input type=text name=estart /></td>
+								<td><input type=text name=eend /></td</tr>
+							</tbody>
+						</table>
+
+				</td></tr>
 				</table>
 			<?}?>
 		<input type=submit value="Submit" />
