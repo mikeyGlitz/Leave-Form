@@ -1,7 +1,4 @@
 <?php
-	#Start a Session
-	session_start();
-
 	#store the email as a session variable
 	$_SESSION['email'] = $_POST['email'];
 	

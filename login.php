@@ -19,7 +19,7 @@
 			<h1>Login</h1>
 			<hr />
 			<!--<form action=loginController.php method=post>-->
-			<form action=dash.php method=post>
+			<form action=view.php method=post>
 				<label for=email>Email:</label><input type=text name=email /><br />
 				<label for=password>Password:</form><input type=password name=pasword /><br />
 				<input type=submit value=Login />

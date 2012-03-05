@@ -12,7 +12,7 @@
 
 <body>
 	<div id="header">
-		<a href="index.php" id="logo"><img src="images/logo.jpg" alt="LOGO" /></a>
+		<a href="index.php" id="logo"><img src="logo.png" alt="LOGO" /></a>
 		<div id="navigation">
 			<ul>
 				<li><a href="index.php">Leave Form</a></li>

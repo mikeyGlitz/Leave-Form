@@ -1,4 +1,7 @@
 <?
+	#Start a Session
+	session_start();
+
 	include "head.php";
 ?>
 	<div id="contents">
