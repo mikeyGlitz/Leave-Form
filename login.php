@@ -22,6 +22,7 @@
 			<form action=view.php method=post>
 				<label for=email>Email:</label><input type=text name=email /><br />
 				<label for=password>Password:</form><input type=password name=pasword /><br />
+				<a href=forgot.php>Forgot password?</a><br />
 				<input type=submit value=Login />
 			</form>
 		</div>
