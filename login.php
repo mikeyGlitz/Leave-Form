@@ -12,14 +12,15 @@
 
 <body>
 	<?php
+		include "dbconnect.php";
 		include "head.php";
 	?>
 	<div id="contents">
 		<div class="background" style="text-align: center; min-height: 150px;">
 			<h1>Login</h1>
 			<hr />
-			<!--<form action=loginController.php method=post>-->
-			<form action=view.php method=post>
+			<form action=loginController.php method=post>
+			<!--<form action=view.php method=post>-->
 				<label for=email>Email:</label><input type=text name=email /><br />
 				<label for=password>Password:</form><input type=password name=pasword /><br />
 				<a href=forgot.php>Forgot password?</a><br />
