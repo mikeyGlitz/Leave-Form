@@ -1,6 +1,6 @@
 <div id="footer">
                 <table class="contacts" style="float: left; margin-right: 2em">
-                        <tr><td><h3><a href="adminfinance.umw.edu/payroll/contact" style="text-decoration: none; color: lightblue">Contact Us</a></h3></td></tr>
+                        <tr><td><h3><a href="http://adminfinance.umw.edu/payroll/contact" style="text-decoration: none; color: lightblue">Contact Us</a></h3></td></tr>
                         <tr><td><b>Address:</b></td><td> <b>University of Mary Washington Payroll Services</b><br /> 1301 College Ave, Fredericksburg, VA 22401</td></tr>
                         <tr><td>Phone:</td><td> 117-683-9187-000</td></tr>
                 </table>

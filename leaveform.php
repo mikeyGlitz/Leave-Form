@@ -29,7 +29,8 @@
 
 				<!--ask the user for the first name and the last name -->
 				<label for=first>First Name:</label><input type=text name=first />
-				<label for=last>Last Name:</label><input type=text name=last /><br />
+				<label for=last>Last Name:</label><input type=text name=last />
+				<label for=supervisor>Supervisor Name:</label><input type=text name=supervisor /><br />
 
 				<!--Collect Leave information -->
 				<h4>Leave Information</h4>
@@ -147,7 +148,8 @@
 				<label for=emplnum>Employee Number:</label><input type=text name=emplnum /><br />
 
 				<label for=first>First Name:</label><input type=text name=first />
-				<label for=last>Last Name:</label><input type=text name=last /><hr />
+				<label for=last>Last Name:</label><input type=text name=last />
+				<label for=supervisor>Supervisor Name:</label><input type=text name=supervisor /><hr />
 				<table id=leave>
 					<tr><td>
 						<table id=types rules=groups frame=hsides border=1 bordercolor=navy>

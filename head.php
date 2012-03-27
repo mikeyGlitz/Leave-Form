@@ -15,7 +15,7 @@
 		<a href="index.php" id="logo"><img src="logo.png" alt="LOGO" /></a>
 		<div id="navigation">
 			<ul>
-				<li><a href="index.php">Leave Form</a></li>
+				<li><a href="index.php">Leave Forms</a></li>
 				<li><a href="login.php">Supervisor Login</a></li>
 			</ul>
 		</div>
