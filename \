@@ -1,4 +1,4 @@
-USE S12-cpsc430G5;
+USE SP12-cpsc430G5;
 --
 -- Table structure for table `supervisors`
 --
@@ -6,7 +6,7 @@ USE S12-cpsc430G5;
 
 DROP TABLE IF EXISTS `supervisors`;
 CREATE TABLE `supervisors` (
-	'num' INT NOT NULL,
+	`num` INT(100) NOT NULL AUTO_INCREMENT,
 	`code` VARCHAR(2) NOT NULL,
 	`lastname` VARCHAR(20) NOT NULL,
 	`firstname` VARCHAR(20) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE `supervisors` (
 	`div` VARCHAR(50) NOT NULL,
 	`title` VARCHAR(50) NOT NULL,
 	`supername` VARCHAR(50),
-	`supertitle` VARCHAR(50),
+	`supertitle` VARCHAR(50)
 );
 
 --

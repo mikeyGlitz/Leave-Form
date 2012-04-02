@@ -12,7 +12,6 @@
 
 <body>
 	<?php
-		include "dbconnect.php";
 		include "head.php";
 	?>
 	<div id="contents">
@@ -22,7 +21,7 @@
 			<form action=loginController.php method=post>
 			<!--<form action=view.php method=post>-->
 				<label for=email>Email:</label><input type=text name=email /><br />
-				<label for=password>Password:</form><input type=password name=pasword /><br />
+				<label for=password>Password:</form><input type=password name=password /><br />
 				<a href=forgot.php>Forgot password?</a><br />
 				<input type=submit value=Login />
 			</form>

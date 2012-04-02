@@ -5,11 +5,9 @@
 		<div class="background" style="min-height: 150px; text-align: center">
 			<h2>Account Recovery</h2>
 			<hr /><br />
-			<form id=rec>
+			<form id=rec action=recover.php method=post>
 				<label for=email>Email:</label>
 				<input type=text name=email /><br />
-				<label for=security>Security Answer</label>
-				<input type=text name=security /><br />
 				<input type=submit value="Recover Account" />
 			</form>
 		</div>
