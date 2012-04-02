@@ -18,6 +18,7 @@
 		<div class="background" style="text-align: center; min-height: 150px;">
 			<h1>Login</h1>
 			<hr />
+			<h2><b><? echo $get['msg']; ?></b></h2>
 			<form action=loginController.php method=post>
 			<!--<form action=view.php method=post>-->
 				<label for=email>Email:</label><input type=text name=email /><br />
