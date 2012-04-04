@@ -1,26 +1,22 @@
 <?php
-	#store the email as a session variable
-	$_SESSION['email'] = $_POST['email'];
-	
 	$formToGet = $_POST['empl'];
 
-	#if $_GET is not equal to "---Select an option---", then proceed with loading the page
+	/*#if $_GET is not equal to "---Select an option---", then proceed with loading the page
 	#otherwise, re-direct back to index
 	if($formToGet == '---Select an option---'){
 		header('Location: index.php?msg=Please+select+a+correct+option');
-	}	
-
+	}*/	
 	#Bring in the header
 	include "head.php";
 ?>
 	<div id="contents">
 	<div class="background">
 		<span style="width: 100%; text-align: center"><h2><? echo $formToGet; ?></h2><hr /></span>
-		<form name=leave action="placeholder" method="post">
 			<?php
 			#Check to see if $formToGet is 'Administrative Faculty'
 			if($formToGet == 'Administrative Faculty'){
 			?>
+		<form name=leave action="placeholder" method="post">
 				<!--Administrative Faculty-specific related form information -->
 				<h4>Insturctions:</h4>
 
@@ -30,7 +26,7 @@
 				<!--ask the user for the first name and the last name -->
 				<label for=first>First Name:</label><input type=text name=first />
 				<label for=last>Last Name:</label><input type=text name=last />
-				<label for=supervisor>Supervisor Name:</label><input type=text name=supervisor /><br />
+				<label for=supervisor>Supervisor Email Address:</label><input type=text name=supervisor /><br />
 
 				<!--Collect Leave information -->
 				<h4>Leave Information</h4>
@@ -57,7 +53,7 @@
 					<tbody>
 						<!-- Row 1 -->
 						<tr><td>
-							<select name=Type1>	
+							<select name=Type>	
 								<option>AT</option>
 								<option>SP</option>
 								<option>SF</option>
@@ -66,69 +62,9 @@
 								<option>CS</option>
 							</select>
 						</td>
-						<td><input type=text name=days1 /></td>
-						<td><input type=text name=dayfrm1 /></td>
-						<td><input type=text name=dayto1 /></td></tr>
-						
-						<!-- Row 2 -->
-						<tr><td>
-							<select name=Type2>	
-								<option>AT</option>
-								<option>SP</option>
-								<option>SF</option>
-								<option>FP</option>
-								<option>JT</option>
-								<option>CS</option>
-							</select>
-						</td>
-						<td><input type=text name=days2 /></td>
-						<td><input type=text name=dayfrm2 /></td>
-						<td><input type=text name=dayto2 /></td></tr>
-						<tr><td>
-
-						<!-- Row 3 -->
-							<select name=Type3>	
-								<option>AT</option>
-								<option>SP</option>
-								<option>SF</option>
-								<option>FP</option>
-								<option>JT</option>
-								<option>CS</option>
-							</select>
-						</td>
-						<td><input type=text name=days3 /></td>
-						<td><input type=text name=dayfrm3 /></td>
-						<td><input type=text name=dayto3 /></td></tr>
-						<tr><td>
-						<!-- Row 4 -->
-							<select name=Type4>	
-								<option>AT</option>
-								<option>SP</option>
-								<option>SF</option>
-								<option>FP</option>
-								<option>JT</option>
-								<option>CS</option>
-							</select>
-						</td>
-						<td><input type=text name=days4 /></td>
-						<td><input type=text name=dayfrm4 /></td>
-						<td><input type=text name=dayto4 /></td></tr>
-
-						<tr><td>
-						<!-- Row 5 -->
-							<select name=Type5>	
-								<option>AT</option>
-								<option>SP</option>
-								<option>SF</option>
-								<option>FP</option>
-								<option>JT</option>
-								<option>CS</option>
-							</select>
-						</td>
-						<td><input type=text name=days5 /></td>
-						<td><input type=text name=dayfrm5 /></td>
-						<td><input type=text name=dayto5 /></td></tr>
-
+						<td><input type=text name=days /></td>
+						<td><input type=text name=dayfrm /></td>
+						<td><input type=text name=dayto /></td></tr>
 					</tbody>
 				</table>
 				</td></tr>
@@ -144,12 +80,13 @@
 				if($formToGet == 'Classified Employee'){ 
 				include 'weekly.php';
 			?>
+		<form name=leave action="placeholder" method="post">
 				<label for=num>Company Number:</label><input type=text name=num />
 				<label for=emplnum>Employee Number:</label><input type=text name=emplnum /><br />
 
 				<label for=first>First Name:</label><input type=text name=first />
 				<label for=last>Last Name:</label><input type=text name=last />
-				<label for=supervisor>Supervisor Name:</label><input type=text name=supervisor /><hr />
+				<label for=supervisor>Supervisor Email Address:</label><input type=text name=supervisor /><hr />
 				<table id=leave>
 					<tr><td>
 						<table id=types rules=groups frame=hsides border=1 bordercolor=navy>
