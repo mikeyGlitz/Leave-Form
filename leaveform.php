@@ -1,4 +1,7 @@
 <?php
+	session_start();
+	$_SESSION['email'] = $_POST['email'];
+	#echo $_SESSION['email'];
 	$formToGet = $_POST['empl'];
 
 	/*#if $_GET is not equal to "---Select an option---", then proceed with loading the page
@@ -16,7 +19,7 @@
 			#Check to see if $formToGet is 'Administrative Faculty'
 			if($formToGet == 'Administrative Faculty'){
 			?>
-		<form name=leave action="placeholder" method="post">
+		<form name=leave action="leaveformController.php" method="post">
 				<!--Administrative Faculty-specific related form information -->
 				<h4>Insturctions:</h4>
 
@@ -63,8 +66,8 @@
 							</select>
 						</td>
 						<td><input type=text name=days /></td>
-						<td><input type=text name=dayfrm /></td>
-						<td><input type=text name=dayto /></td></tr>
+						<td><input type=text name=start /></td>
+						<td><input type=text name=end /></td></tr>
 					</tbody>
 				</table>
 				</td></tr>
@@ -80,7 +83,7 @@
 				if($formToGet == 'Classified Employee'){ 
 				include 'weekly.php';
 			?>
-		<form name=leave action="placeholder" method="post">
+			<form name=leave action="leaveformController.php" method="post">
 				<label for=num>Company Number:</label><input type=text name=num />
 				<label for=emplnum>Employee Number:</label><input type=text name=emplnum /><br />
 
@@ -148,9 +151,9 @@
 										<option>MO</option>
 										<option>RT</option>
 									</select></td>
-								<td><input type=text name=lhrs /></td>
-								<td><input type=text name=lstart /></td>
-								<td><input type=text name=lend /></td</tr>
+								<td><input type=text name=hrs /></td>
+								<td><input type=text name=start /></td>
+								<td><input type=text name=end /></td</tr>
 							</tbody>
 						</table>
 						<h3>Leave Earned</h3>

@@ -6,7 +6,7 @@
 	#include "session.php";
 
 	#if session is not empty
-	if ($Session['email'] != ""){
+	if ($_SESSION['email'] != NULL){
 		header('Location: view.php');
 	}
 
