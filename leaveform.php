@@ -12,6 +12,8 @@
 	#Bring in the header
 	include "head.php";
 ?>
+<script type=text/javascript language=javascript src=datepicker/datetimepicker.js>
+</script>
 	<div id="contents">
 	<div class="background">
 		<span style="width: 100%; text-align: center"><h2><? echo $formToGet; ?></h2><hr /></span>
@@ -66,8 +68,16 @@
 							</select>
 						</td>
 						<td><input type=text name=days /></td>
-						<td><input type=text name=start /></td>
-						<td><input type=text name=end /></td></tr>
+						<td>
+							<input type=text id=start name=start />
+							<a href="javascript:NewCal('start', 'ddmmyyy', true, 24)">
+								<img src=datepicker/cal.gif />
+							</a></td>
+							<td>
+							<input type=text id=end name=end />
+							<a href="javascript:NewCal('end', 'ddmmyyy', true, 24)">
+								<img src=datepicker/cal.gif />
+							</a></td></tr>
 					</tbody>
 				</table>
 				</td></tr>
@@ -152,8 +162,16 @@
 										<option>RT</option>
 									</select></td>
 								<td><input type=text name=hrs /></td>
-								<td><input type=text name=start /></td>
-								<td><input type=text name=end /></td</tr>
+						<td>
+							<input type=text id=start name=start />
+							<a href="javascript:NewCal('start', 'ddmmyyy', true, 24)">
+								<img src=datepicker/cal.gif />
+							</a></td>
+							<td>
+							<input type=text id=end name=end />
+							<a href="javascript:NewCal('end', 'ddmmyyy', true 24)">
+								<img src=datepicker/cal.gif />
+							</a></td></tr>
 							</tbody>
 						</table>
 						<h3>Leave Earned</h3>
