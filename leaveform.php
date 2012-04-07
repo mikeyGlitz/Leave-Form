@@ -70,12 +70,12 @@
 						<td><input type=text name=days /></td>
 						<td>
 							<input type=text id=start name=start />
-							<a href="javascript:NewCal('start', 'ddmmyyy', true, 24)">
+							<a href="javascript:NewCal('start', 'ddmmyyyy')">
 								<img src=datepicker/cal.gif />
 							</a></td>
 							<td>
 							<input type=text id=end name=end />
-							<a href="javascript:NewCal('end', 'ddmmyyy', true, 24)">
+							<a href="javascript:NewCal('end', 'ddmmyyyy')">
 								<img src=datepicker/cal.gif />
 							</a></td></tr>
 					</tbody>
@@ -164,12 +164,12 @@
 								<td><input type=text name=hrs /></td>
 						<td>
 							<input type=text id=start name=start />
-							<a href="javascript:NewCal('start', 'ddmmyyy', true, 24)">
+							<a href="javascript:NewCal('start', 'ddmmyyyy')">
 								<img src=datepicker/cal.gif />
 							</a></td>
 							<td>
 							<input type=text id=end name=end />
-							<a href="javascript:NewCal('end', 'ddmmyyy', true 24)">
+							<a href="javascript:NewCal('end', 'ddmmyyyy')">
 								<img src=datepicker/cal.gif />
 							</a></td></tr>
 							</tbody>
