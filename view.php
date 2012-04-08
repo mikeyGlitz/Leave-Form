@@ -26,7 +26,7 @@
 				<div class="section">
 					<a href=logout.php>logout</a>
 					<h3>Submitted Requests</h3>
-					<form action = viewController.php>
+					<form action = viewController.php method =post>
 					<table id=reqs rules=groups bordercolor=navy border=1 frame=hsides cellpadding=5>
 						<thead>
 							<th></th>
