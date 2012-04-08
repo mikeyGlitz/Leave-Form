@@ -1,5 +1,4 @@
 <?php
-	#Bring in the session
 	session_start();
 
 	#collect the supervisor user name
@@ -27,43 +26,51 @@
 				<div class="section">
 					<a href=logout.php>logout</a>
 					<h3>Submitted Requests</h3>
-
+					<form action = viewController.php>
 					<table id=reqs rules=groups bordercolor=navy border=1 frame=hsides cellpadding=5>
 						<thead>
+							<th></th>
 							<th>Employee Name</th>
 							<th>Email Address</th>
 							<th>Type of Leave</th>
 							<th>Duration</th>
-							<th>Start Date</th>
-							<th>End Date</th>
 							<th>Approval Status</th>
 						</thead>
 						<tbody>
 							<?php
 								#create a query string
 								$query = "SELECT * FROM Request WHERE superemail = '$user'";
-								echo $query;
+								#echo $query;
 
 								#run the query
-								$result = mysqli_query($link, $query);
+								$result = mysqli_query($link, $query) or die('error querying');
 
 								while($row = mysqli_fetch_array($result)){
-									#print out each row of the query
+									#print out each row of the queryi
 									#line up the query results with temporary strings
-									$name = $row['first'] . " " . $row['last'];
+									$change = $row['KEY'] . "Status";
+									$name = $row['first']. " " . $row['last'];
+									#echo $name;
 									$email = $row['email'];
+									#echo $email;
 									$type = $row['type'];
+									#echo $type;
 									$duration = $row['duration'];
-									$start = $row['start'];
-									$end = $end['end'];
+									$status = $row['status'];
 
 									#create a table row with the query results
-									echo "<tr><td>$name</td><td>$type</td><td>$duration</td>
-										<td>$start</td><td>$end</td></tr>";
+									
+									echo "<tr><td><input type=checkbox name=$change /></td>
+										<td>$name</td>
+										<td>$email</td><td>$type</td>
+										<td>$duration</td><td>$status</td></tr>";
+
 								} #end while
 							?>
 						</tbody>
 					</table>
+					<input type = submit value = "Change Status" />
+					</form>
 				</div>
 			</div>
 		</div>

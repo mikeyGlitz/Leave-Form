@@ -1,5 +1,4 @@
 <?PHP
-	#Start a session
 	session_start();
 
 	#Connect to the database

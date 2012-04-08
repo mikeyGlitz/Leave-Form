@@ -1,6 +1,7 @@
 <?php
 	#Start a session
-	include "session.php";
+	session_start();
+
 	#connect to the database
 	include "dbconnect.php";
 	#include "session.php";
@@ -30,8 +31,10 @@
 	$result = mysqli_query($link, $q1);
 
 	if($row = mysqli_fetch_array($result)){
-		$_SESSION['email'] = $email;
+		$_SESSION['email'] = $row['email'];
 		$_SESSION['password'] = $password;
+
+		echo $_SESSION['email'];
 		header('Location: view.php');
 	}
 	else{
