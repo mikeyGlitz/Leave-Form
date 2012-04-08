@@ -1,5 +1,15 @@
 <?php
+	#Bring in the session
+	session_start();
+
+	#collect the supervisor user name
+	$user = $_SESSION['email'];
+
+	#bring in the header html code
 	include "head.php";
+
+	#bring in the dateabase
+	include "dbconnect.php";
 ?>
 	<div id="contents">
 		<div class="background">
@@ -15,6 +25,7 @@
 					</div>
 				</div>
 				<div class="section">
+					<a href=logout.php>logout</a>
 					<h3>Submitted Requests</h3>
 
 					<table id=reqs rules=groups bordercolor=navy border=1 frame=hsides cellpadding=5>
@@ -22,12 +33,34 @@
 							<th>Employee Name</th>
 							<th>Email Address</th>
 							<th>Type of Leave</th>
-							<th>Date Posted</th>
+							<th>Duration</th>
+							<th>Start Date</th>
+							<th>End Date</th>
 							<th>Approval Status</th>
 						</thead>
 						<tbody>
 							<?php
-								#The list of the requests will be generated here
+								#create a query string
+								$query = "SELECT * FROM Request WHERE superemail = '$user'";
+								echo $query;
+
+								#run the query
+								$result = mysqli_query($link, $query);
+
+								while($row = mysqli_fetch_array($result)){
+									#print out each row of the query
+									#line up the query results with temporary strings
+									$name = $row['first'] . " " . $row['last'];
+									$email = $row['email'];
+									$type = $row['type'];
+									$duration = $row['duration'];
+									$start = $row['start'];
+									$end = $end['end'];
+
+									#create a table row with the query results
+									echo "<tr><td>$name</td><td>$type</td><td>$duration</td>
+										<td>$start</td><td>$end</td></tr>";
+								} #end while
 							?>
 						</tbody>
 					</table>
