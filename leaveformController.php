@@ -34,7 +34,8 @@
 	#Write information to file
 
 	#confirm status with the user
-	echo "Request submitted <a href=index.php>click here to continue</a>";	
+	#echo "Request submitted <a href=index.php>click here to continue</a>";	
 	#Close the session
 	session_destroy();
+	header("Location: index.php");
 ?>

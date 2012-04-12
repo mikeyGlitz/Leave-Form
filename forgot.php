@@ -8,6 +8,8 @@
 			<form id=rec action=recover.php method=post>
 				<label for=email>Email:</label>
 				<input type=text name=email /><br />
+				<label for=password>New Password:</label>
+				<input type = password name = password />
 				<input type=submit value="Recover Account" />
 			</form>
 		</div>
