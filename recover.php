@@ -16,3 +16,5 @@
 		$result = mysqli_query($link, $q2) or die("Could not execute query");
 	//}
 ?>
+
+<META HTTP-EQUIV="refresh" content="0;URL=login.php">
