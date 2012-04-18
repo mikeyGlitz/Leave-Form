@@ -37,5 +37,5 @@
 	#echo "Request submitted <a href=index.php>click here to continue</a>";	
 	#Close the session
 	session_destroy();
-	header("Location: index.php");
+	header("Location: index.php?msg=Request+submitted+successfully");
 ?>

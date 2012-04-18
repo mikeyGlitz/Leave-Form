@@ -48,7 +48,7 @@
 								while($row = mysqli_fetch_array($result)){
 									#print out each row of the queryi
 									#line up the query results with temporary strings
-									$change = $row['KEY'] . "Status";
+									$change = $row['KEY'];
 									$name = $row['first']. " " . $row['last'];
 									#echo $name;
 									$email = $row['email'];
