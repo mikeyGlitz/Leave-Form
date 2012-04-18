@@ -69,6 +69,9 @@
 							?>
 						</tbody>
 					</table>
+					<label for=update>Change status to:</label><br />
+					<input type=radio name=update value=A />Approved<br />
+					<input type=radio name=update value=d />Denied<br />
 					<input type = submit value = "Change Status" />
 					</form>
 				</div>
